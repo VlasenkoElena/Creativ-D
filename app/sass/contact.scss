@@ -1,0 +1,123 @@
+.contact {
+    position: relative;
+    overflow: hidden;
+    &-content {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(159, 154, 207, .5);
+    }
+    &-info {
+        width: 350px;
+        height: 90px;
+        position: relative;
+        background-color: rgba(255, 255, 100%, .8);
+        left: calc( 100% - 75px);
+        transition: 1s;
+        &:hover {
+            left: calc(100% - 320px)
+        }
+        &--img {
+            width: 90px;
+            height: 90px;
+            background-color: #9f9acf;
+        }
+        &--text {
+            padding-left: 25px;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+    &-forms {
+        max-width: 860px;
+        height: 285px;
+        margin: auto;
+
+    }
+    &-inputs {
+        width: 100%;
+    }
+
+    &-input {
+        width: 49%;  
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        height: 55px;
+        padding: 0 25px;
+        font-style: italic;
+        background-color: rgba(235, 235, 235, .5);
+        color: #665f60;
+        &::placeholder {
+            color: white;
+            font-style: italic;
+        }
+        &:focus {
+            background-color: rgba(235, 235, 235, .9);
+        }
+        &--textarea {
+            padding: 25px 25px;
+            width: inherit;
+            height: 205px;
+        }
+    }
+    &-btn {
+        width: 290px;
+        height: 70px;
+        border-radius: 4px;
+        background-color: #9f9acf;
+        font: 700 20px/26px 'Proxima Nova', sans-serif;
+        text-transform: uppercase;
+        vertical-align: middle;
+        color: #ebebeb;
+        border: none;
+        &:hover {
+            border: 3px solid #9f9acf;
+            background-color: #dbdbdb;
+            color: #9f9acf;
+        }
+        @media all and (max-width: 750px) {
+            width: 200px;
+          }
+    }
+    &-scroll {
+        width: 90px;
+        height: 90px;
+        background-color: rgba(159,154,207,.6);
+        position: absolute;
+        right: 10%;
+        bottom: 110px;
+        z-index: 2;
+        width: 85px;
+        height: 85px;
+        padding-top: 30px;
+        padding-left: 25px;
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border-left: 1px solid white;
+            border-top: 1px solid white;
+            left: 27px;
+            transform: rotate(45deg);
+        }
+         &:hover {
+           bottom: 130px;
+           transition: all 0.7s;
+    }
+    @media all and (max-width: 750px) {
+        visibility: hidden;
+      }
+  }
+}
+
+#map {
+    width: 100%;
+    min-height: 900px;
+}
+

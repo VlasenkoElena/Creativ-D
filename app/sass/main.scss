@@ -1,0 +1,88 @@
+
+*,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+input {
+    outline: none;
+}
+
+
+/*TITLE*/
+.h2 {
+    color: white;
+    font: 700 36px/47px 'Proxima Nova', sans-serif;
+    text-transform: uppercase;
+    &--team {
+      color: #665f60;
+    }
+    @media all and (max-width: 790px) {
+        font-size: 18px;
+        margin-top: -20px;
+      }
+}
+
+.h3 {
+    font: 700 24px/30px 'PT Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+/*BUTTON*/
+
+.button {
+    color: grey;
+    font-size: 20px;
+    font-style: italic;
+    width: 195px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid grey;
+    background-color: transparent;
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        transform: scale(1.01);
+    }
+    &-works {
+        padding-top: 15px; 
+        color: white;
+        border: 1px solid white;
+    }
+    @media all and (max-width: 700px) {
+        width: 165px;
+        height: 40px;
+      }
+    
+}
+
+body {
+    font: 20px/23px 'PT Sans', sans-serif;
+    color: #665f60;
+    background-color: #ebebeb;
+}
+
+@import 'proxima-nova.scss';
+@import 'header.scss';
+@import 'about.scss';
+@import 'services.scss';
+@import 'works.scss';
+@import 'team.scss';
+@import 'contact.scss';
+@import 'footer.scss';

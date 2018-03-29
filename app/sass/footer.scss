@@ -1,0 +1,42 @@
+.footer {
+    height: 185px;
+    background-color: #9f9acf;
+    padding-top: 70px;
+    color: white;
+    font-size: 20px;
+    &-icon {
+        width: 32px;
+        height: 32px;
+        background-color: #ebebeb;
+        border-radius: 50%;
+        padding-top: 5px;
+        margin-left: 25px;
+        text-align: center;
+        &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+            transform: scale(1.1);
+        }
+        &--behance {
+            background-color: transparent;
+            padding-top: 0;
+        }
+    }
+    &-social {
+        color: #9f9acf;
+        font-size: 23px;
+    }
+
+}
+@media all and (max-width: 750px) {
+    .footer-text {
+        margin: auto;
+        font-size: 16px;
+    }
+    .footer-icons {
+        margin: 10px auto;
+    }
+    .footer-icon {
+        margin-left: 10px;
+    }
+}
+

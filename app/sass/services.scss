@@ -1,0 +1,40 @@
+.services {
+    min-height: 800px;
+    margin-top: 120px;
+    &-img {
+        background: url(../img/service.png);
+        background-size: cover;
+        color: white;
+        min-height: 800px;
+        padding-top: 100px;
+        width: 300px;
+    }
+    &-card {
+        max-width: 380px;
+        height: 400px;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--design {
+            background-color: #dbdbdb;
+        }
+        &:hover {
+            background-color: #9f9acf;
+            transform: scale(1.02);
+        }
+    }
+    &-text {
+        width: 190px;
+        font-size: 18px; 
+        font-style: italic;
+    }
+    &-quote {
+        margin-top: 120px;
+        font-size: 18px;
+        font-style: italic;
+        &--autor {
+            font-weight: 700;
+        }
+    }
+}
